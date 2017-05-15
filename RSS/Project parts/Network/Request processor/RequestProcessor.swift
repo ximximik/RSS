@@ -4,7 +4,6 @@
 //
 
 import RxSwift
-import SwiftyJSON
 import Alamofire
 import RxAlamofire
 

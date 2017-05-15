@@ -5,7 +5,6 @@
 
 import RxCocoa
 import RxSwift
-import SwiftyJSON
 
 public let eInvalidResponseErrorText = NSLocalizedString("invalidServerResponseErrorText", comment: "")
 public let eFillAllFieldsErrorText = NSLocalizedString("fillAllFieldsErrorText", comment: "")

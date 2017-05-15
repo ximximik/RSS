@@ -19,7 +19,8 @@ public class AssemblyCenter: BaseAssemblyCenter {
     
     public override var assemblies: [Assembly] {
         return [networkAssembly(),
-                servicesAssembly()]
+                servicesAssembly(),
+                feedAssembly()]
     }
 }
 
@@ -31,5 +32,9 @@ extension AssemblyCenter {
     
     public func servicesAssembly() -> ServicesAssembly {
         return ServicesAssembly()
+    }
+    
+    public func feedAssembly() -> FeedAssembly {
+        return FeedAssembly()
     }
 }
