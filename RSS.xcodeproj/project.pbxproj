@@ -14,7 +14,7 @@
 		5E31688164DE49844E850A06 /* FeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A305F8C58D6FB7A1E7852AB /* FeedAssembly.swift */; };
 		6708969E1ECA19EC00033BEC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708969D1ECA19EC00033BEC /* Article.swift */; };
 		670896A01ECA214400033BEC /* FeedSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708969F1ECA214400033BEC /* FeedSource.swift */; };
-		672ABD8E1EC8697B003EDCDD /* FeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672ABD8D1EC8697B003EDCDD /* FeedTests.swift */; };
+		672ABD8E1EC8697B003EDCDD /* FeedParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672ABD8D1EC8697B003EDCDD /* FeedParserTests.swift */; };
 		672ABD991EC8697B003EDCDD /* RSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672ABD981EC8697B003EDCDD /* RSSUITests.swift */; };
 		672ABE571EC86C91003EDCDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672ABDCA1EC86C90003EDCDD /* AppDelegate.swift */; };
 		672ABE581EC86C91003EDCDD /* BaseAssemblyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672ABDCC1EC86C90003EDCDD /* BaseAssemblyCenter.swift */; };
@@ -34,6 +34,7 @@
 		672ABE991EC86C91003EDCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672ABE411EC86C91003EDCDD /* Assets.xcassets */; };
 		672ABE9B1EC86C91003EDCDD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 672ABE441EC86C91003EDCDD /* Localizable.strings */; };
 		6762A3EA1ECA4AC700E1C3E4 /* ItemDataXMLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762A3E91ECA4AC700E1C3E4 /* ItemDataXMLGenerator.swift */; };
+		6762A3EC1ECA4C9600E1C3E4 /* RxElementMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6762A3EB1ECA4C9600E1C3E4 /* RxElementMap.swift */; };
 		677E280D1EC897960051F94C /* RequestProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E280C1EC897960051F94C /* RequestProcessor.swift */; };
 		677E28101EC89E600051F94C /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E280F1EC89E600051F94C /* NetworkAssembly.swift */; };
 		677E28121EC89ED80051F94C /* BaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677E28111EC89ED80051F94C /* BaseAssembly.swift */; };
@@ -75,7 +76,7 @@
 		6708969F1ECA214400033BEC /* FeedSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedSource.swift; sourceTree = "<group>"; };
 		672ABD751EC8697B003EDCDD /* RSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672ABD891EC8697B003EDCDD /* RSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		672ABD8D1EC8697B003EDCDD /* FeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTests.swift; sourceTree = "<group>"; };
+		672ABD8D1EC8697B003EDCDD /* FeedParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParserTests.swift; sourceTree = "<group>"; };
 		672ABD8F1EC8697B003EDCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		672ABD941EC8697B003EDCDD /* RSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		672ABD981EC8697B003EDCDD /* RSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSUITests.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		672ABE421EC86C91003EDCDD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		672ABE451EC86C91003EDCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6762A3E91ECA4AC700E1C3E4 /* ItemDataXMLGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDataXMLGenerator.swift; sourceTree = "<group>"; };
+		6762A3EB1ECA4C9600E1C3E4 /* RxElementMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxElementMap.swift; sourceTree = "<group>"; };
 		677E280C1EC897960051F94C /* RequestProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestProcessor.swift; sourceTree = "<group>"; };
 		677E280F1EC89E600051F94C /* NetworkAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
 		677E28111EC89ED80051F94C /* BaseAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAssembly.swift; sourceTree = "<group>"; };
@@ -216,7 +218,7 @@
 		672ABD8C1EC8697B003EDCDD /* RSSTests */ = {
 			isa = PBXGroup;
 			children = (
-				672ABD8D1EC8697B003EDCDD /* FeedTests.swift */,
+				672ABD8D1EC8697B003EDCDD /* FeedParserTests.swift */,
 				672ABD8F1EC8697B003EDCDD /* Info.plist */,
 				6762A3E91ECA4AC700E1C3E4 /* ItemDataXMLGenerator.swift */,
 			);
@@ -351,6 +353,7 @@
 		672ABE331EC86C90003EDCDD /* RxExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				6762A3EB1ECA4C9600E1C3E4 /* RxElementMap.swift */,
 				672ABE381EC86C90003EDCDD /* RxUnwrap.swift */,
 			);
 			path = RxExtensions;
@@ -767,6 +770,7 @@
 				161C448864AE3772BE4FF9BC /* FeedRequestPreparer.swift in Sources */,
 				0C18A28A2975324357DAF007 /* FeedViewController.swift in Sources */,
 				BFF898178EAB1B8C8E592A80 /* FeedViewModel.swift in Sources */,
+				6762A3EC1ECA4C9600E1C3E4 /* RxElementMap.swift in Sources */,
 				0706C482C16F037FD50F451E /* StoryboardFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -776,7 +780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6762A3EA1ECA4AC700E1C3E4 /* ItemDataXMLGenerator.swift in Sources */,
-				672ABD8E1EC8697B003EDCDD /* FeedTests.swift in Sources */,
+				672ABD8E1EC8697B003EDCDD /* FeedParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,11 +39,11 @@ public class FeedParser: FeedParserProtocol {
             throw NSError.invalidResponse
         }
         
+        let article = Article(title: title, descriptionText: description, link: link, date: date)
+        
         let imageURLString = try? feedItemXML[NetworkKeys.FeedXML.Item.enclosure].value(ofAttribute: NetworkKeys.FeedXML.Enclosure.url) as String
-        let imageURL: URL? = imageURLString?.url
+        article.imageURL = imageURLString?.url
         
-        
-        let article = Article(title: title, descriptionText: description, link: link, date: date, imageURL: imageURL)
         
         return article
     }
