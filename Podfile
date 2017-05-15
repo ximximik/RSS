@@ -16,6 +16,8 @@ target 'RSS' do
     pod 'SWXMLHash', '~> 3.0.0'
     pod 'Alamofire', '~> 4.4.0'
     pod 'RxAlamofire', '~> 3.0.2'
+    
+    target 'RSSTests'
 end
 
 post_install do |installer|

@@ -8,6 +8,10 @@
 
 import Foundation
 
-public class Article {
-    
+public struct Article {
+    let title: String
+    let descriptionText: String
+    let link: URL
+    let date: Date
+    let imageURL: URL?
 }

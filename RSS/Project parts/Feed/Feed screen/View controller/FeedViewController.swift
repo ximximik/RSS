@@ -10,8 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-public class FeedViewController: UIViewController {
-    private var disposeBag = DisposeBag()
+public class FeedViewController: BaseViewController {
     public var viewModel: FeedViewModel!
 
     //MARK: Lifecycle
