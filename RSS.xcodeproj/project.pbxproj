@@ -48,6 +48,8 @@
 		E3D2FDB01ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2FDAF1ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift */; };
 		E3D2FDB21ECABBDF00E8CCE5 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2FDB11ECABBDF00E8CCE5 /* DateExtensions.swift */; };
 		E3D2FDB41ECAC79800E8CCE5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2FDB31ECAC79800E8CCE5 /* Localization.swift */; };
+		E3D2FDB71ECAFBFD00E8CCE5 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = E3D2FDB51ECAFBFD00E8CCE5 /* iTunesArtwork.png */; };
+		E3D2FDB81ECAFBFD00E8CCE5 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3D2FDB61ECAFBFD00E8CCE5 /* iTunesArtwork@2x.png */; };
 		F41C104521F9CD9E3836A923 /* Pods_RSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535C0134BE76CE5B08C79A07 /* Pods_RSS.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +121,8 @@
 		E3D2FDAF1ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedArticleCellViewModel.swift; sourceTree = "<group>"; };
 		E3D2FDB11ECABBDF00E8CCE5 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		E3D2FDB31ECAC79800E8CCE5 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		E3D2FDB51ECAFBFD00E8CCE5 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		E3D2FDB61ECAFBFD00E8CCE5 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		E586C0103E3D7DC47B8B8E26 /* FeedRequestPreparer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedRequestPreparer.swift; sourceTree = "<group>"; };
 		EB526AE6BFD3ED211BCAE08A /* Pods-RSS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSS/Pods-RSS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +200,8 @@
 		672ABD6C1EC8697A003EDCDD = {
 			isa = PBXGroup;
 			children = (
+				E3D2FDB51ECAFBFD00E8CCE5 /* iTunesArtwork.png */,
+				E3D2FDB61ECAFBFD00E8CCE5 /* iTunesArtwork@2x.png */,
 				672ABD771EC8697B003EDCDD /* RSS */,
 				672ABD8C1EC8697B003EDCDD /* RSSTests */,
 				672ABD971EC8697B003EDCDD /* RSSUITests */,
@@ -615,8 +621,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				677E28141EC89F200051F94C /* LaunchScreen.storyboard in Resources */,
+				E3D2FDB81ECAFBFD00E8CCE5 /* iTunesArtwork@2x.png in Resources */,
 				672ABE9B1EC86C91003EDCDD /* Localizable.strings in Resources */,
 				672ABE991EC86C91003EDCDD /* Assets.xcassets in Resources */,
+				E3D2FDB71ECAFBFD00E8CCE5 /* iTunesArtwork.png in Resources */,
 				835E40C1B8361E2B424A3F1F /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
