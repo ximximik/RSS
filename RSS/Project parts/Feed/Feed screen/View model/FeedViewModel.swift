@@ -54,6 +54,10 @@ extension Reactive where Base: FeedViewModel {
     public var state: Driver<FeedViewModelState> {
         return base.state.asDriver()
     }
+    
+    public var articles: Observable<[FeedArticleCellViewModel]> {
+        return base.articles.asObservable().mapElement { FeedArticleCellViewModel(article: $0) }
+    }
 }
 
 extension FeedViewModelState: Equatable { }

@@ -34,6 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let controller = window?.rootViewController as? UINavigationController {
             controller.viewControllers.removeAll()
         }
-        window?.rootViewController = StoryboardFeed.feedViewController()
+        window?.rootViewController = UINavigationController(rootViewController: StoryboardFeed.feedViewController())
     }
 }

@@ -44,6 +44,10 @@
 		835E40C1B8361E2B424A3F1F /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F1C81E31F83F17DBAA5373 /* Feed.storyboard */; };
 		949ECE4441B2C931A30934CA /* Pods_RSS_RSSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3542EB36FD0F8916CA38E65 /* Pods_RSS_RSSTests.framework */; };
 		BFF898178EAB1B8C8E592A80 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B248E9F7F50B3323B90F87E5 /* FeedViewModel.swift */; };
+		E3D2FDAE1ECAB9C300E8CCE5 /* FeedArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2FDAD1ECAB9C300E8CCE5 /* FeedArticleCell.swift */; };
+		E3D2FDB01ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2FDAF1ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift */; };
+		E3D2FDB21ECABBDF00E8CCE5 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2FDB11ECABBDF00E8CCE5 /* DateExtensions.swift */; };
+		E3D2FDB41ECAC79800E8CCE5 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2FDB31ECAC79800E8CCE5 /* Localization.swift */; };
 		F41C104521F9CD9E3836A923 /* Pods_RSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535C0134BE76CE5B08C79A07 /* Pods_RSS.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +115,10 @@
 		CCCFB81B003C27B5EA13238E /* FeedAccessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedAccessor.swift; sourceTree = "<group>"; };
 		D3542EB36FD0F8916CA38E65 /* Pods_RSS_RSSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSS_RSSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D670991510DEFFB3FCD01ABD /* Pods-RSS-RSSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSS-RSSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSS-RSSTests/Pods-RSS-RSSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3D2FDAD1ECAB9C300E8CCE5 /* FeedArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedArticleCell.swift; sourceTree = "<group>"; };
+		E3D2FDAF1ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedArticleCellViewModel.swift; sourceTree = "<group>"; };
+		E3D2FDB11ECABBDF00E8CCE5 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		E3D2FDB31ECAC79800E8CCE5 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		E586C0103E3D7DC47B8B8E26 /* FeedRequestPreparer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FeedRequestPreparer.swift; sourceTree = "<group>"; };
 		EB526AE6BFD3ED211BCAE08A /* Pods-RSS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSS/Pods-RSS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +153,7 @@
 		1BC5B404F0E9CF3BFC83D691 /* Feed screen */ = {
 			isa = PBXGroup;
 			children = (
+				E3D2FDAC1ECAB9A000E8CCE5 /* Cells */,
 				7CB960929B343935F1204218 /* View controller */,
 				308FD9BD9D2B217540A75EE2 /* View model */,
 			);
@@ -346,6 +355,7 @@
 				672ABE2E1EC86C90003EDCDD /* StringExtension.swift */,
 				672ABE311EC86C90003EDCDD /* UIView+InstantiateFromNib.swift */,
 				672ABE321EC86C90003EDCDD /* UIViewController+SBStoryboard.swift */,
+				E3D2FDB11ECABBDF00E8CCE5 /* DateExtensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -391,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				672ABE441EC86C91003EDCDD /* Localizable.strings */,
+				E3D2FDB31ECAC79800E8CCE5 /* Localization.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -455,6 +466,15 @@
 				648BB493946AA83FF6E57E20 /* Storyboard */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		E3D2FDAC1ECAB9A000E8CCE5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2FDAD1ECAB9C300E8CCE5 /* FeedArticleCell.swift */,
+				E3D2FDAF1ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		EC65E270E15436F9488823EE /* Accessor */ = {
@@ -747,6 +767,7 @@
 				672ABE7D1EC86C91003EDCDD /* ServicesAssembly.swift in Sources */,
 				6708969E1ECA19EC00033BEC /* Article.swift in Sources */,
 				672ABE931EC86C91003EDCDD /* RxUnwrap.swift in Sources */,
+				E3D2FDAE1ECAB9C300E8CCE5 /* FeedArticleCell.swift in Sources */,
 				677E281C1EC8A1410051F94C /* Storyboard.swift in Sources */,
 				672ABE7C1EC86C91003EDCDD /* AppearanceAdjuster.swift in Sources */,
 				672ABE571EC86C91003EDCDD /* AppDelegate.swift in Sources */,
@@ -760,16 +781,19 @@
 				677E28101EC89E600051F94C /* NetworkAssembly.swift in Sources */,
 				672ABE8E1EC86C91003EDCDD /* UIViewController+SBStoryboard.swift in Sources */,
 				672ABE941EC86C91003EDCDD /* UIColor+Colors.swift in Sources */,
+				E3D2FDB01ECAB9D400E8CCE5 /* FeedArticleCellViewModel.swift in Sources */,
 				672ABE981EC86C91003EDCDD /* UIViewController+HUD.swift in Sources */,
 				672ABE861EC86C91003EDCDD /* BaseViewController.swift in Sources */,
 				677E28121EC89ED80051F94C /* BaseAssembly.swift in Sources */,
 				677E280D1EC897960051F94C /* RequestProcessor.swift in Sources */,
+				E3D2FDB41ECAC79800E8CCE5 /* Localization.swift in Sources */,
 				781CD22AEB898A75A3A9E1E5 /* FeedAccessor.swift in Sources */,
 				5E31688164DE49844E850A06 /* FeedAssembly.swift in Sources */,
 				4D0267D44A7BBAF21A45EF19 /* FeedParser.swift in Sources */,
 				161C448864AE3772BE4FF9BC /* FeedRequestPreparer.swift in Sources */,
 				0C18A28A2975324357DAF007 /* FeedViewController.swift in Sources */,
 				BFF898178EAB1B8C8E592A80 /* FeedViewModel.swift in Sources */,
+				E3D2FDB21ECABBDF00E8CCE5 /* DateExtensions.swift in Sources */,
 				6762A3EC1ECA4C9600E1C3E4 /* RxElementMap.swift in Sources */,
 				0706C482C16F037FD50F451E /* StoryboardFeed.swift in Sources */,
 			);
@@ -944,7 +968,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D670991510DEFFB3FCD01ABD /* Pods-RSS-RSSTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HJQH8ETNCF;
 				INFOPLIST_FILE = RSSTests/Info.plist;
@@ -960,7 +983,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1857ACCDD752D6FC01DB0078 /* Pods-RSS-RSSTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = HJQH8ETNCF;
 				INFOPLIST_FILE = RSSTests/Info.plist;
@@ -975,7 +997,6 @@
 		672ABDA41EC8697B003EDCDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HJQH8ETNCF;
 				INFOPLIST_FILE = RSSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -989,7 +1010,6 @@
 		672ABDA51EC8697B003EDCDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = HJQH8ETNCF;
 				INFOPLIST_FILE = RSSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
