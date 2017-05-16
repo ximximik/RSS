@@ -7,8 +7,8 @@ import Swinject
 import SwinjectStoryboard
 
 open class BaseAssemblyCenter {
-    private static let _shared = AssemblyCenter()
-    open class var shared: AssemblyCenter {
+    private static let _shared = BaseAssemblyCenter()
+    open class var shared: BaseAssemblyCenter {
         return _shared
     }
     
