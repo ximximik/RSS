@@ -4,7 +4,6 @@
 //
 
 import RxSwift
-import SwiftyJSON
 import Alamofire
 import RxAlamofire
 
@@ -16,6 +15,7 @@ open class NetworkRequestProcessor: NetworkRequestProcessorProtocol {
     
     open func process<T>(request: DataRequest, handler: @escaping ((Data) throws -> T)) -> Observable<T> {
         return request.rx.data()
+            .observeOn(ConcurrentDispatchQueueScheduler(qos: .background))
             .map { data -> T in
                 return try handler(data)
         }
