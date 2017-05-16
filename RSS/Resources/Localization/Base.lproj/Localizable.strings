@@ -10,3 +10,7 @@
 
 //Errors
 "invalidServerResponseErrorText" = "Invalid server response. Failed to parse";
+
+//RSS
+"Feed.emptyText" = "RSS feed is empty";
+"Feed.reloadText" = "Updating news...";
