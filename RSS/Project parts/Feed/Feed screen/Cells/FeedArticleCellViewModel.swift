@@ -19,7 +19,7 @@ public class FeedArticleCellViewModel {
     
     public init(article: Article) {
         self.title = article.title
-        self.descriptionText = article.descriptionText
+        self.descriptionText = article.descriptionText.trimmingCharacters(in: .whitespacesAndNewlines)
         self.imageURL = article.imageURL
         self.dateString = Date.dateString(for: article)
         self.source = article.source?.name ?? ""
